@@ -1,0 +1,15 @@
+<html>
+
+<body>
+
+{% for r in restaurantList %}
+
+<h1>{{r.name}}</h1>
+
+<a href='{{url_for('restaurantMenu', restaurant_id = r.id) }}'>Menu</a>
+
+{% endfor %}
+
+</body>
+
+</html>
